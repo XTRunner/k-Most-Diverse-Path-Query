@@ -27,6 +27,8 @@ Major Data:
 
 -- experiment_related: All the randomly picked query points in each city (for reproducing experimental results)
 
+The below figure shows the initial location (green diamond), terminal location (purple star), PoIs (red circle) in our experiments
+
 ![query_NYC](https://user-images.githubusercontent.com/16656274/152444925-cce5785d-ca72-4979-be37-4b08b5cb0ab3.png)
 
 
