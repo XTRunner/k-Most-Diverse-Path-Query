@@ -1,31 +1,31 @@
 # k-Most-Diverse-Path-Query
 
-Distributed and Parallel Database 2021
+Submitted to **Distributed and Parallel Database Journal (DAPD)**
 
-Implementation in Python 3.7 of DAPD 2021. Please check requirements.txt for package dependencies
+Implementation in Python 3.7. Please check requirements.txt for package dependencies
 
-Major Codes:
+## Major Codes:
 
--- hrtree.py: Diversity Aggregated R-Tree. Besides, nodes.py defines the node class in DAR-Tree
+- hrtree.py: Diversity Aggregated R-Tree. Besides, nodes.py defines the node class in DAR-Tree
 
--- graph_construct.py: Build PoI Network from Road Network and PoI database by using R-Tree
+- graph_construct.py: Build PoI Network from Road Network and PoI database, by leverging R-Tree
 
--- greedy_search.py: Include the fixed terminal variant of VSS-kDPQ, ESS-kDPQ, Dijkstra's algorithm (by using priority queue) and Random Walk with Restart
+- greedy_search.py: Include the fixed terminal variant of VSS-kDPQ, ESS-kDPQ, Dijkstra algorithm (by using priority queue) and Random Walk with Restart
 (For VSS-kDPQ and ESS-kDPQ without terminal vertex, please check https://github.com/XTRunner/MDM2020)
 
--- lda_learner.py: Perform Natrual Language Processing, including clean the raw text and train Latent topic based model
+- lda_learner.py: Perform Natrual Language Processing, including clean the raw text and train Latent topic based model
 
--- trip_advisor_crawler/trip_advisor_crawler/spiders/trip_advisor_attraction_review_NY.py: Web HTML crawler for collecting reviews information of attratctions from TripAdvisor (https://www.tripadvisor.com)
+- trip_advisor_crawler/trip_advisor_crawler/spiders/trip_advisor_attraction_review_NY.py: Web HTML crawler for collecting reviews information of attratctions from TripAdvisor (https://www.tripadvisor.com)
 
-Major Data:
+## Major Data (for reproduction):
 
--- LDA_model/lda_trained_model: Trained learning model used in MDM 2020 paper
+- LDA_model/lda_trained_model: Trained learning model used in MDM 2020 paper
 
--- LDA_model/train_cleaned_text.csv: Dataset for training the model
+- LDA_model/train_cleaned_text.csv: Dataset for training the model
 
--- LDA_model/xxx_cleaned_review.csv: Cleaned/Stemmed reviews of attractions in xxx (city name)
+- LDA_model/xxx_cleaned_review.csv: Cleaned/Stemmed reviews of attractions in xxx (city name)
 
--- experiment_related: All the randomly picked query points in each city (for reproducing experimental results)
+- experiment_related: All the randomly picked query points in each city (for reproducing experimental results)
 
 The below figure shows the initial location (green diamond), terminal location (purple star), PoIs (red circle) in our experiments
 
